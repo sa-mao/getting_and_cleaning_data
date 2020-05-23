@@ -1,9 +1,10 @@
 ## Information about the table:
 Table of size: [180 × 88]
 
-Each variable is obtained by computing the mean of the each corresponding variable in the raw data for each activity and each subject.
+Each variable is obtained by computing the mean of the corresponding variable in the raw data for each activity and each subject.
 
 ## Variables:
+**Note**: for a complete description check the `features_info.txt` file in the [raw](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip") data package.
 -  subject                           : int - 1..30, The experiment subject.
 -  activity                          : Factor with 6 levels WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 -  tBodyAcc.mean.X                   : num
