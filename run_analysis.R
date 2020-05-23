@@ -9,7 +9,7 @@ unzip(zipfile = "./data/raw_dataset.zip" , exdir = "./data")
 
 # We read the features.txt file to get the appopriate variable names
 features <- read.table("./data/UCI HAR Dataset/features.txt")
-features <- gsub("\\.", "", features[, 2])
+features <- gsub("\\.|\\(|\\)", "", features[, 2])
 # Then read the measurements file for the training set, the labels file and the subject file
 # And then we combine them into one data unit.
 x_train <- read.table("./data/UCI HAR Dataset/train/X_train.txt", col.names = features)
